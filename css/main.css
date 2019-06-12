@@ -286,7 +286,8 @@ html {
 .landing_share-content a:hover {
   color: #ffcf01;
 }
-.landing_share-content .fa-facebook-f {
+.landing_share-content .fa-facebook-f,
+.landing_share-content .fa-twitter {
   margin-right: 2rem;
 }
 
