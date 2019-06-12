@@ -222,6 +222,7 @@ html {
   width: 22rem;
   transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
+  -webkit-appearance: none;
   -webkit-transition: all 0.35s ease-in-out;
 }
 .input_email {
@@ -239,6 +240,7 @@ html {
 }
 .input_button {
   background-color: #ffcf01;
+  -webkit-appearance: none;
   color: black;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -371,6 +373,7 @@ html {
   width: 20rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+  -webkit-appearance: none;
 }
 
 @media only screen and (max-width: 1040px) {
