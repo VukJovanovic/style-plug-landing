@@ -210,6 +210,10 @@ html {
   margin-bottom: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.landing_content-cta h1 .heading-style {
+  font-style: italic;
+  font-size: 25px;
+}
 .second_landing .landing_content-cta h1 {
   text-align: left;
 }
