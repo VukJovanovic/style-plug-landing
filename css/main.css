@@ -217,6 +217,9 @@ html {
   font-style: italic;
   font-size: 25px;
 }
+.landing_content-cta .second_landing_h2 {
+  text-align: left;
+}
 .second_landing .landing_content-cta h1 {
   text-align: left;
 }
@@ -250,6 +253,7 @@ html {
 .second_landing_form_container #mc_embed_signup form {
   text-align: left;
 }
+
 .input_email,
 .input_button {
   width: 22rem;
@@ -414,6 +418,12 @@ html {
   -webkit-appearance: none;
 }
 
+@media only screen and (max-width: 1340px) {
+  #mc_embed_signup form .second_page_email {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+}
 @media only screen and (max-width: 1040px) {
   .cta-text {
     grid-column: 1 / -1;
