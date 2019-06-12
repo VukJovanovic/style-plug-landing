@@ -206,7 +206,7 @@ html {
 .landing_content-cta h1 {
   grid-column: 1 / -1;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.7rem;
   margin-bottom: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -426,12 +426,6 @@ html {
     width: 100%;
   }
 }
-@media only screen and(max-width: 1345px) {
-  .second_landing_form_container #mc_embed_signup input.email {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-}
 
 @media only screen and (max-width: 700px) {
   .slideOut_menu {
@@ -460,6 +454,10 @@ html {
   .slideOut_content h2 {
     margin-right: 0;
   }
+  .landing_container .second_landing_share {
+    justify-content: center;
+    padding-right: 0px;
+  }
 }
 @media only screen and (max-width: 480px) {
   html {
@@ -468,9 +466,15 @@ html {
 }
 @media only screen and (max-width: 390px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
   .landing_contact a {
     font-size: 1.5rem;
+  }
+  .landing_content-cta h1 {
+    line-height: 5rem;
+  }
+  .landing_container .second_landing {
+    grid-template-columns: 5% minmax(min-content, 1fr) minmax(2rem, 1fr);
   }
 }

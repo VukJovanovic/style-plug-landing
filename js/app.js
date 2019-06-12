@@ -10,6 +10,7 @@ $(document).ready(function () {
             }
             else {
                 $('#subscribe-result').html('<p>Invalid email address</p>')
+                $('#mce-EMAIL').val('');
             }
         })
     }
@@ -32,6 +33,7 @@ function register($form) {
                 $('#mce-EMAIL').css('borderColor', '#ffffff')
                 $('#subscribe-result').css('color', '#fff')
                 $('#subscribe-result').css('margin-top', '10px')
+                $('#mce-EMAIL').val('');
                 $('#subscribe-result').html('<p>Thank you for subscribing.</p>')
             } else {
                 // Something went wrong, do something to notify the user.
@@ -39,6 +41,7 @@ function register($form) {
 
                 // $('#mce-EMAIL').css('borderColor', '#ff8282')
                 $('#subscribe-result').css('color', '#ff8282')
+                $('#mce-EMAIL').val('');
                 $('#subscribe-result').html('<p>' + msgCheck(msg) + '</p>')
             }
         }
