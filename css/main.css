@@ -357,16 +357,17 @@ html {
 }
 .slide_input_email:focus {
   color: #fff;
+  border: 1px solid #ffcf01;
 }
 .slide_input_email::placeholder {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.496);
 }
 .slide_input_button {
   border: none;
   background-color: #ffcf01;
   padding: 1rem;
   margin-top: 2rem;
-  width: 18rem;
+  width: 20rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
