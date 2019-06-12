@@ -210,7 +210,10 @@ html {
   margin-bottom: 2rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.landing_content-cta h1 .heading-style {
+.landing_content-cta h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 1rem;
   font-style: italic;
   font-size: 25px;
 }
@@ -477,5 +480,10 @@ html {
   }
   .landing_container .second_landing {
     grid-template-columns: 5% minmax(min-content, 1fr) minmax(2rem, 1fr);
+  }
+}
+@media only screen and (max-height: 630px) {
+  .landing_content-cta h1 {
+    margin-top: 3rem;
   }
 }
