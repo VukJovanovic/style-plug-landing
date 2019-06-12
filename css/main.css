@@ -435,9 +435,6 @@ html {
     font-size: 45%;
   }
   .landing_contact a {
-    padding: 1.2rem;
-  }
-  .landing_logo {
-    width: 19rem;
+    font-size: 1.5rem;
   }
 }
