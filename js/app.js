@@ -31,11 +31,21 @@ function register($form) {
             } else {
                 // Something went wrong, do something to notify the user.
                 console.log(data.msg)
+                const msg = data.msg.substring(0, 1);
+
                 // $('#mce-EMAIL').css('borderColor', '#ff8282')
                 $('#subscribe-result').css('color', '#ff8282')
                 $('#mc-embedded-subscribe').val('GET PLUGGED IN');
-                $('#subscribe-result').html('<p>You are already subscribed!</p>')
+                $('#subscribe-result').html('<p>' + msgCheck(msg) + '</p>')
             }
         }
     })
 };
+
+function msgCheck(msg) {
+    if (msg === "0") {
+        return "Wrong email address";
+    } else {
+        return "You are already subscribed";
+    }
+}

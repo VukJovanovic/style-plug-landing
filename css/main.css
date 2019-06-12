@@ -313,7 +313,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50rem;
+  width: 55rem;
   height: 100vh;
   opacity: 0;
   background-color: #003366;
@@ -353,6 +353,7 @@ html {
   padding: 1rem;
   margin-right: 1rem;
   font-family: 'Open Sans', sans-serif;
+  width: 20rem;
 }
 .slide_input_email:focus {
   color: #fff;
@@ -396,6 +397,7 @@ html {
   }
   .slide_input_email {
     margin-bottom: 1rem;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 780px) {
@@ -404,16 +406,15 @@ html {
   }
 }
 @media only screen and (max-width: 480px) {
-  .landing_logo {
-    width: 14rem;
-  }
-  .landing_contact a {
-    font-size: 1rem;
-    padding: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-  }
   .slideOut_menu {
     width: 30rem;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .landing_contact a {
+    padding: 1.2rem;
+  }
+  .landing_logo {
+    width: 19rem;
   }
 }
