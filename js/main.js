@@ -42,7 +42,12 @@ $(document).ready(function () {
                     }
                     $formResult.html('<p>' + message + '</p>');
                 } else {
+                    if ($form.find("input[type='text']")) {
+                        $form.find("input[type='text']").val('')
+                    }
+                    $form.find("input[type='email']").val('')
                     $formResult.html('<p>Thank you for subscribing.</p>');
+
                 }
             }
         });
@@ -50,6 +55,10 @@ $(document).ready(function () {
 
     function isValidEmail($form) {
         var email = $form.find("input[type='email']").val()
+        var newEmailString = $form.find("input[type='text']").val()
+        var temp = newEmailString.replace('@', '')
+
+        $form.find("input[type='text']").val(temp)
         var testEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
         if (testEmail.test(email)) {
             return true
