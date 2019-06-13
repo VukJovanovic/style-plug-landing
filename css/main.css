@@ -42,7 +42,8 @@ html {
   width: 350px;
   vertical-align: top;
 }
-#mc_embed_signup input.email::placeholder {
+#mc_embed_signup input.email::placeholder,
+#mc_embed_signup .friend_form input.text::placeholder {
   color: rgba(255, 255, 255, 0.496);
 }
 #mc_embed_signup .friend_form input.email {
