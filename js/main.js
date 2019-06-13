@@ -18,7 +18,7 @@ $(document).ready(function () {
             if (isValidEmail($form)) {
                 submitSubscribeForm($form, $formResult)
             } else {
-                $formResult.html('<p>Please fill all the fields</p>');
+                $formResult.html('<p>Incorrect email address!</p>');
             }
         })
     }
@@ -50,12 +50,8 @@ $(document).ready(function () {
 
     function isValidEmail($form) {
         var email = $form.find("input[type='email']").val()
-        var secondName;
-        if ($form.find("input[type='text']")) {
-            secondName = $form.find("input[type='text']").val()
-        }
         var testEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
-        if (testEmail.test(email) && secondName.length > 0) {
+        if (testEmail.test(email)) {
             return true
         }
         else {
