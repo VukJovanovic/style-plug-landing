@@ -42,11 +42,17 @@ $(document).ready(function () {
                     }
                     $formResult.html('<p>' + message + '</p>');
                 } else {
-                    if ($form.find("input[type='text']")) {
+                    if ($form.attr("id") === "mc-embedded-friend-form") {
                         $form.find("input[type='text']").val('')
+                        $form.find("input[type='email']").val('')
+                        $formResult.html('<p>Thank you for spreading the word!</p>');
                     }
-                    $form.find("input[type='email']").val('')
-                    $formResult.html('<p>Thank you for subscribing.</p>');
+                    else {
+                        $form.find("input[type='email']").val('')
+                        $formResult.html("<p>We'll be in touch soon!</p>");
+                    }
+
+
 
                 }
             }
