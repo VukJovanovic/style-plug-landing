@@ -66,7 +66,7 @@ $(document).ready(function () {
 
         $form.find("input[type='text']").val(temp)
         var testEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
-        if (testEmail.test(email)) {
+        if (testEmail.test(email) && email.lenght > 0) {
             return true
         }
         else {
