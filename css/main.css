@@ -193,8 +193,14 @@ html {
   background-position: center;
   background-size: cover;
 }
+.temp_logo_center {
+  justify-content: center;
+}
 .landing_contact {
   align-self: center;
+}
+.temp_hide {
+  display: none;
 }
 .landing_contact a {
   text-decoration: none;
