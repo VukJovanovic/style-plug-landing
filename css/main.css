@@ -60,6 +60,17 @@ html {
   color: #fff;
   width: 21rem;
 }
+
+/* input width only for form with IG handle */
+#mc_embed_signup .IG_handle input.email,
+#mc_embed_signup .IG_handle .mc-field-group input.text,
+#mc_embed_signup .IG_handle .clear input.IG_handle {
+  width: 25rem;
+}
+#mc_embed_signup .IG_handle .mc-field-group input.text {
+  margin-bottom: 2rem;
+}
+
 #mc_embed_signup .friend_form input:focus {
   color: #fff;
   border: 1px solid #ffcf01;
@@ -348,7 +359,11 @@ html {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
-
+#subscribe-IG-result p {
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
 .landing_share {
   grid-row: 3 / 4;
   grid-column: 1 / -1;
@@ -465,6 +480,7 @@ html {
     margin-bottom: 1rem;
   }
 }
+
 @media only screen and (max-width: 1040px) {
   .cta-text {
     grid-column: 1 / -1;
@@ -504,6 +520,11 @@ html {
   #mc_embed_signup .friend_form input.email,
   #mc_embed_signup .friend_form input.text,
   #mc_embed_signup .friend_form input.button {
+    width: 100%;
+  }
+  #mc_embed_signup .IG_handle input.email,
+  #mc_embed_signup .IG_handle .mc-field-group input.text,
+  #mc_embed_signup .IG_handle .clear input.IG_handle {
     width: 100%;
   }
 }

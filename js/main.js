@@ -4,6 +4,8 @@ $(document).ready(function () {
     var $formMainResult = $('#subscribe-result')
     var $formFriend = $('#mc-embedded-friend-form')
     var $formFriendResult = $('#subscribe-friend-result')
+    var $formIG = $('#mc-embedded-IG-subscribe-form')
+    var $formIGResult = $('#subscribe-IG-result')
 
     $('#mc-embedded-friend-subscribe').bind('click', function () {
         ajaxMailchimpForm($formFriend, $formFriendResult)
@@ -11,6 +13,10 @@ $(document).ready(function () {
     $('#mc-embedded-subscribe').bind('click', function () {
         ajaxMailchimpForm($formMain, $formMainResult)
     })
+    $('#mc-embedded-IG-subscribe-form').bind('click', function () {
+        ajaxMailchimpForm($formIG, $formIGResult)
+    })
+
 
     function ajaxMailchimpForm($form, $formResult) {
         $form.submit(function (e) {
@@ -47,7 +53,13 @@ $(document).ready(function () {
                         $form.find("input[type='email']").val('')
                         $formResult.html('<p>Thank you for spreading the word!</p>');
                     }
+                    else if ($form.attr("id") === "#mc-embedded-subscribe-form") {
+
+                        $form.find("input[type='email']").val('')
+                        $formResult.html("<p>We'll be in touch soon!</p>");
+                    }
                     else {
+                        $form.find("input[type='text']").val('')
                         $form.find("input[type='email']").val('')
                         $formResult.html("<p>We'll be in touch soon!</p>");
                     }
@@ -66,7 +78,7 @@ $(document).ready(function () {
 
         $form.find("input[type='text']").val(temp)
         var testEmail = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/
-        if (testEmail.test(email) && email.lenght > 0) {
+        if (testEmail.test(email) && email.length > 0) {
             return true
         }
         else {
