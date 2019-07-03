@@ -57,14 +57,16 @@ $(document).ready(function () {
 
                         $form.find("input[type='email']").val('')
                         $formResult.html("<p>We'll be in touch soon!</p>");
+                        console.log('ovde');
+
                     }
                     else {
+                        console.log('ovamo')
                         $form.find("input[type='text']").val('')
                         $form.find("input[type='email']").val('')
                         $formResult.html("<p>We'll be in touch soon!</p>");
+                        window.location.href = "https://vukjovanovic.github.io/style-plug-landing/thankyou";
                     }
-
-
 
                 }
             }
