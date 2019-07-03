@@ -474,6 +474,36 @@ html {
   -webkit-appearance: none;
 }
 
+/* Thank you page styles */
+.thankYouContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 0 4rem;
+}
+.thankYouContent {
+  align-self: center;
+  text-align: center;
+}
+.thankYouContent p {
+  font-size: 3rem;
+}
+.thankYouSocial {
+  margin-top: 2rem;
+}
+.thankYouSocial a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+  margin-right: 1.5rem;
+}
+
+/* Responsive styles */
+
 @media only screen and (max-width: 1340px) {
   #mc_embed_signup form .second_page_email {
     width: 48%;
